@@ -1,0 +1,46 @@
+.ssu3_password {    
+    width: calc(100% - 110px);
+    height: 46px;
+    font-size: 16px;
+    line-height: 18px;
+    position: absolute;
+    left: 54px;
+    border-width: 0px;
+    background: rgba(0,0,0,0);
+}
+
+.ssu3_eye {
+    position: absolute;
+    top: 12px;;
+    right: 30px;
+    width: 18px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.input_left_icon { /*** changed ***/
+    position: absolute;
+    top: 13px;
+    left: 23px;
+    width: 22px;
+    height: 19px;
+}
+
+.ssu3_body {
+    width: 80%;
+    max-width: 1000px;
+    height: auto;
+    margin: 96px auto 0px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

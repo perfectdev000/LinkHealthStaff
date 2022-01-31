@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Muli';
+    src: url('AvenirLTStd-Black.eot');
+    src: url('AvenirLTStd-Black.eot?#iefix') format('embedded-opentype'),
+        url('AvenirLTStd-Black.woff2') format('woff2'),
+        url('AvenirLTStd-Black.woff') format('woff'),
+        url('AvenirLTStd-Black.ttf') format('truetype'),
+        url('AvenirLTStd-Black.svg#AvenirLTStd-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: url('AvenirLTStd-Roman.eot');
+    src: url('AvenirLTStd-Roman.eot?#iefix') format('embedded-opentype'),
+        url('AvenirLTStd-Roman.woff2') format('woff2'),
+        url('AvenirLTStd-Roman.woff') format('woff'),
+        url('AvenirLTStd-Roman.ttf') format('truetype'),
+        url('AvenirLTStd-Roman.svg#AvenirLTStd-Roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: url('AvenirLTStd-Book.eot');
+    src: url('AvenirLTStd-Book.eot?#iefix') format('embedded-opentype'),
+        url('AvenirLTStd-Book.woff2') format('woff2'),
+        url('AvenirLTStd-Book.woff') format('woff'),
+        url('AvenirLTStd-Book.ttf') format('truetype'),
+        url('AvenirLTStd-Book.svg#AvenirLTStd-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

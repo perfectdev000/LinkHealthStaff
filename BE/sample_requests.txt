@@ -1,0 +1,97 @@
+
+/************** STAFF SIGN UP *****************/
+curl --location --request POST 'http://3.109.143.248:5000/v1/LHS/staff/signup' \
+--data-raw '{
+    "name":"Adil",
+    "email":"shah0aa1a0d0il413@gmail.com",
+    "phone":"8787878787",
+    "password":"shahaadil9",
+    "resume":[
+        {"link":"test link"}
+    ],
+    "natureOfJob":[
+        "Permananet Position"
+    ],
+    "workSchedule":[
+        "Full Time", 
+        "Part Time"
+        ],
+    "weekendAvailiblity":true,
+    "startWorkdate":"2021-09-09",
+    "currentLocations":["CA", "LA"],
+    "otherCities":["LA", "CA"],
+    "nursingLicence":[
+        {
+            "image":"test",
+             "name":"ABD", 
+             "state":"LA",
+              "number":"232323",
+              "expirationDate":"2021-09-09"
+        }
+         ],
+    "liablityInsurance":[
+        {
+            "insuranceProvider":"askdaks",
+             "policyNumber":"asdad"
+             }
+             ],
+    "certifications":[{
+        "name":"61594ea93037ad2ccb9bd811",
+         "certifyingAuthority":"shah",
+          "recievedOn":"2021-09-09", 
+          "expirationDate":"2021-09-09"}],
+    "education":[{"degree":"61594ea93037ad2ccb9bd811", "college":"AMU", "recievedOn":"2021-09-09"}],
+    "experiencedIn":["adasdsa","adjlkasjdl"],
+    "agreement":[{"text":"kjahdkjashdkjsa"
+    }
+    ]
+}',
+
+curl --location -g --request POST '{{AWS}}/v1/LHS/staff/login' \
+--data-raw '{
+    "email":"shah0aa1a0d0il413@gmail.com",
+     "password":"shahaadil9",
+     "type":"staff"
+}'
+
+
+/************** GET USER BY ID *****************/
+curl --location --request GET 'localhost:5000/v1/LHS/staff/getById/615c378b3eed4d6d21d2d996'
+
+/************** UPDATE USER BY ID *****************/
+curl --location --request PATCH 'localhost:5000/v1/LHS/staff/update/615c378b3eed4d6d21d2d996' \
+--data-raw '{
+    "password":"Shahaadil103"
+}'
+
+/************** UPLOAD FILE *****************/
+curl --location --request POST 'http://3.109.143.248:5000/file/upload' \
+--form 'media=@"/C:/Users/Mohammad Adil Shah/Pictures/invoice_39084.pdf"'
+
+
+/************** HOSPITAL SIGN UP *****************/
+curl --location --request POST 'localhost:5000/v1/LHS/hospital/signup' \
+--data-raw '{
+    "name":"Test Hospital",
+    "email":"shardh@shah.com",
+    "hiringRole":"abc",
+    "healthCareInstitution":{
+        "name":"Test Institute",
+        "size":"68",
+        "website":"www.sds.com"
+    },
+    "corporateAddress":{
+   "zipCode":"878787",
+    "street":"jhdlkasjd",
+    "city":"kjlkjkl",
+    "state":"jhkdhaskj"
+        },
+    "password":"jdlksajdklasj",
+    "phone":"7777777777",
+    "agreement":{
+        "text":"hjkhkjhk"
+    }
+}'
+
+/************** GET HOSPITAL BY ID *****************/
+curl --location --request GET 'localhost:5000/v1/LHS/hospital/getById/615c48542e04ae09cb7ca96b'

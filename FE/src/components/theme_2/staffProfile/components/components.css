@@ -1,0 +1,325 @@
+/****************************
+******** AVATAR CSS *********
+****************************/
+
+.t2_sp_avatar_container {
+    width: 100%;
+    min-height: 108px;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 7.5px;
+    padding: 19.5px 22px;
+    position: relative;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.t2_sp_avatar_img {
+    width: 80px;
+    height: 80px;
+    float: left;
+    position: relative;
+}
+
+.t2_sp_avatar_badge {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: -5px;
+    bottom: -5px;
+    cursor: pointer;
+}
+
+.t2_sp_avtar_desc {
+    margin-top: 12px;
+    width: fit-content;
+    float: left;
+    margin-left: 50px;
+}
+
+.t2_sp_avatar_txt1 {    
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25.5px;
+    float:left;
+    max-width: 400px;
+}
+
+.t2_sp_avatar_txt2 {    
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.t2_sp_avatar_logout {
+    width: 110px;
+    height: 35px;
+    border: 1px solid #009CDE;
+    box-sizing: border-box;
+    border-radius: 100px;
+    margin-top: 27px;
+    padding: 5px 26px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #009CDE;
+    float: right;
+    cursor: pointer;
+}
+
+@media all and (max-width: 767px) {
+    .t2_sp_avatar_txt1 {
+        width: 60%;
+    }
+}
+
+@media all and (max-width: 565px) {
+    .t2_sp_title1 {
+        margin-bottom: 35px;
+    }
+
+    .t2_sp_avatar_img {
+        float: none;
+        width: 80px;
+        height: 80px;
+        margin-left: calc(50%-46px);
+    }
+    
+    .t2_sp_avtar_desc {
+        margin-top: 12px;
+        width: fit-content;
+        float: none;
+        margin-left: 0px;
+    }
+}
+
+.t2_sp_title1 {
+    margin-top: 48px;
+    margin-bottom: 10px;
+}
+
+@media all and (max-width: 505px) {
+    .t2_sp_title1 {
+        margin-bottom: 40px;
+    }
+}
+
+/****************************
+******   JOB TYPE    ********
+****************************/
+.t2_sp_work {
+    margin-top: 48px;
+    width: 100%;    
+    font-size: 18px;
+    line-height: 22px;
+    height: auto;
+}
+
+.t2_sp_work_title {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.t2_sp_work_container {
+    width: 100%;
+    min-height: 90px;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 16.5px 21px 21px;
+    margin-top: 18px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.t2_sp_work_item {    
+    width: auto;
+    border: 1px solid rgba(51, 51, 51, 0.1);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 100px;
+    float: left;
+    padding: 10px 30px;
+    font-size: 17px;
+    line-height: 25px;
+    margin-right: 24px;
+    margin-top: 5px;
+    background-color: white;
+}
+.t2_sp_item_selected {
+    background-color: #009CDE!important;
+    color: white;
+}
+
+.t2_sp_calendar {
+    position: absolute;
+    top: 11px;
+    right: 21px;
+    width: 36px;
+    height: 18px;
+    cursor: pointer;
+    fill: #67625B;
+    stroke: #67625B;
+}
+
+.t2_sp_calendar_selected {
+    fill: white;
+    stroke: white;
+}
+
+@media all and (max-width: 665px) {
+    .t2_sp_work_item {  
+        float: none;
+        width: 60%;
+        margin: 5px auto 0px;
+    }
+}
+
+/****************************
+******   LOCATIONS    *******
+****************************/
+.t2_sp_loc_selected {
+    background-color: #009CDE;
+    color: white;
+    fill: white;
+}
+.t2_sp_loc_img {
+    margin-right: 15px;
+}
+.t2_sp_loc_btn {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+/****************************
+****** NURSE LICENSES *******
+****************************/
+.t2_sp_nl_item {
+    width: 100%;
+    margin: 38px auto auto;
+    padding: 20px 27px;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    padding: 17px 21px 21px;
+    margin-top: 18px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.t2_sp_licence_row {
+    width: 100%;
+    height: 66px;    
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+.t2_sp_licence_th {
+    font-family: 'Muli';
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 350;
+}
+
+.t2_sp_licence_td {
+    font-family: 'Muli';
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.t2_sp_licence_accBtn {    
+    border-width: 0px;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 400;
+    padding: 0px 0px 0px;
+}
+
+.t2_sp_hr {
+    color:rgba(0, 0, 0, 0.1);
+}
+.t2_sp_crimianlBtn {
+    width: 80%;
+    height: 48px;
+    margin: 0px auto;
+    color: white;   
+    background: #009CDE;
+    border: 1px solid rgba(51, 51, 51, 0.1);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 80px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/****************************
+******   DRUG TEST    *******
+****************************/
+.t2_sp_editdrug_part1 {
+    width: 95%;
+    max-width: 900px;
+    height: auto;
+    margin: 30px auto 0px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 20px 30px;
+}
+
+.t2_sp_editdrug_img {
+    width: 50%;
+    float: left;
+}
+
+.t2_sp_editdrug_btn {
+    width: 100%;
+    min-width: 200px;
+    max-width: 300px;
+    height: 48px;
+    margin: auto auto;
+    background: #FFFFFF;
+    border: 1px solid #009CDE;
+    border-radius: 60px;
+    color: #009CDE;
+    font-size: 14px;
+    line-height: 16px;
+    cursor: pointer;
+}
+
+@media all and (max-width: 767px) {
+    .t2_sp_editdrug_img {
+        width: 50%;
+        float: none;
+        margin: 0px auto 20px;
+    }
+}
+
+
+/****************************
+****** Certifications *******
+****************************/
+.t2_sp_cert_addBtn {
+    color: #009CDE;
+    float: right;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/****************************
+****** Criminal Number ******
+****************************/
+
+.t2_green_success {
+    margin-top: 20px;
+    width: 100%;
+    height: 90px;
+    background: rgba(0, 156, 222, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 32px;
+    padding: 29px;
+}

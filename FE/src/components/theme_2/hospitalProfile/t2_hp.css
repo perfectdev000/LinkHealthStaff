@@ -1,0 +1,6 @@
+.t2_hospHeader {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 30px;
+}

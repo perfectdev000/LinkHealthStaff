@@ -1,0 +1,98 @@
+
+.hsu1_txt1 {
+    width: 100%;
+    height: auto;
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 42px;
+    text-align: center;
+    color: #333333;
+}
+
+.hsu1_input1 {
+    width: 97%;
+    float: left
+}
+
+.hsu1_input2 {
+    width: 97%;
+    float: right
+}
+
+.hsu1_txt2 {
+    width: 80%;
+    margin: 24px auto 10px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    color: #333333;
+}
+
+.hsu2_txt1 {
+    width: 90%;
+    margin:60px auto 0px;
+    height: auto;
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 42px;
+    text-align: center;
+    color: #333333;
+}
+
+.hsu2_addLocation {
+    margin: 50px auto 0px;
+    height: 22px;
+    color: #009CDE;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hsu3_txt3 {
+    margin-top: 36px;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.last_name {
+    display: none;
+}
+
+
+@media all and (max-width: 767px) {
+    .hsu1_input1 {
+        width: 100%;
+    }
+
+    .last_name {
+        display: block;
+    }
+
+    .hsu1_input2 {
+        width: 100%;
+        margin-top: 11px;
+    }
+
+    .hsu1_txt1 {
+        font-size: 30px;
+    }
+    .hsu1_txt2 {
+        font-size: 18px;
+    }
+    .hsu2_txt1 {
+        font-size: 30px;
+    }
+}
+
+/* @media all and (max-width: 550px) {
+    .hsu1_txt1 {
+        font-size: 30px;
+    }
+    .hsu1_txt2 {
+        font-size: 16px;
+    }
+} */

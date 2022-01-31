@@ -1,0 +1,141 @@
+.logInLogo {
+    width: 350px;
+    height: 160px
+}
+
+.logIn_txt1 {
+    margin-top: 60px;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #333333;
+}
+
+.logIn_txt2 {
+    margin-top: 24px;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #333333;
+}
+
+.logIn_body {
+    width: 75%;
+    margin: 60px auto 0px;
+}
+
+.logIn_button {    
+    width: 55%;
+    min-width: 200px;
+    height: 48px;
+    margin: 30px auto 0px;
+    background-color: #009CDE;
+    border-radius: 60px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 16px;
+    padding-top: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.signUp_button {    
+    background-color: white;
+    color: #009CDE;
+    border: 1px solid #009CDE;
+}
+
+.link_button {    
+    width: 100%;
+    height: 48px;
+    margin: 30px auto 0px;
+    color: #009CDE;
+    border-radius: 60px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 16px;
+    padding-top: 16px;
+    border: 1px solid #009CDE;
+    cursor: pointer;
+}
+
+.login_letterBtn {   
+    margin-top: 36px; 
+    font-size: 18px;
+    line-height: 22px;
+    color: #009CDE;
+    text-align: center;
+    cursor: pointer;
+}
+
+.login_txt3 {   
+    margin-top: 36px; 
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    text-align: center;
+}
+
+.forgotPassword_txt2 {
+    width: 70%;
+    margin: 24px auto 0px;
+    max-width: 450px;
+}
+
+@media all and (max-width: 767px) {
+    .logInLogo {
+        width: 280px;
+        height: 125px;
+    }
+}
+
+
+.signUp_item_container {
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;    
+    display: flex;
+    justify-content: space-between;
+}
+
+.signUp_item {
+    width: 240px;
+    height: 220px;
+    padding: 0px;
+    float: left;
+    fill: #333333;
+    color: #333333;
+    margin-bottom: 18px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+
+.signUp_item_selected {
+    background-color: #009CDE;
+    color: white;
+    fill: white;
+}
+
+.signUp_item_img {
+    margin-top: 50px;
+    margin-left: 102px;
+}
+
+.signUp_item_txt {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.logIn_button_disabled {
+    background-color: rgba(0, 156, 222, 0.5);
+    cursor: not-allowed;
+}
+
+@media all and (max-width: 686px) {
+    .signUp_item {
+        margin: 0px auto 18px;
+    }    
+}

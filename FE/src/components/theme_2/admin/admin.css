@@ -1,0 +1,268 @@
+
+/**********************
+****** DASHBOARD ******
+**********************/
+.admin_dash_part1 {
+    margin: 0px;
+}
+.admin_datefilter_container {
+    width: 100%;
+    max-width: 240px;
+    height: 48px;
+    float: left;
+    position: relative;    
+    padding: 12px 25px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 50px;
+    font-size: 14px;
+    line-height: 22px;
+}
+.admin_datefilter_img {
+    width: 16px;
+    height: 16px;
+    margin-right: 16px;
+    float: left;
+}
+.admin_datefilter_btn {
+    width: 10px;
+    height: 16px;
+    float: right;
+    cursor: pointer;
+}
+.admin_dash_datePicker {
+    opacity: 0;
+    margin-top: -30px;
+}
+.admin_dash_item_container {
+    margin: 0px;
+    min-height: 170px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    margin-bottom: 32px;
+}
+.admin_dash_item {
+    height: 80px;
+    margin: 45px auto;
+    border-width: 0px;
+    cursor: default!important;
+    background-color: white;
+}
+
+.admin_dash_item_img {
+    width: 44px;
+}
+
+.admin_dash_item_right {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+.admin_dash_item_hr {
+    width: 60%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 17%;
+    display: none;
+}
+
+@media all and (max-width: 575px) {
+    .admin_dash_item_right {
+        border-left: 0px solid rgba(0, 0, 0, 0.1);
+    }
+    .admin_dash_item_hr {
+        display: block;
+    }
+    .admin_dash_item_img {
+        width: 70px;
+    }
+}
+
+/*************************
+** MANAGE ADMINISTRATOR **
+**************************/
+.admin_mngAdmin_nameFilter {
+    width: calc(100% - 450px);
+    margin-right: 15px;
+    min-height: 32px;
+    border-radius: 80px;
+    background-color: white;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    font-size: 13px;
+    padding: 8px 24px;
+    cursor: default!important;
+    border-width: 0px;
+}
+.admin_mngAdmin_nameFilter_span1 {
+    width: 120px;
+    float: left;
+    height: 16px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.admin_mngAdmin_nameFilter_input {
+    width: calc(100% - 180px);
+    margin-left: 20px;
+    height: 16px;
+    border-width: 0px;
+}
+.admin_mngAdmin_roleFilter {   
+    width: 210px;
+    min-height: 32px;
+    background-color: white;
+    font-size: 13px;
+    border-width: 0px;
+    border-radius: 80px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    padding: 8px 24px;
+}
+.admin_mngAdmin_addAdmin {   
+    width: 210px;
+    background-color: #009CDE;
+    color: white;
+    font-size: 13px;
+    border-width: 0px;
+    margin-left: 15px;
+}
+
+@media all and (max-width: 1150px) {
+    .admin_mngAdmin_nameFilter {
+        width: 100%;
+        margin-right: 0px;
+    }    
+    .admin_mngAdmin_roleFilter {   
+        width: calc(50% - 15px);
+    }    
+    .admin_mngAdmin_addAdmin {   
+        width: 50%;
+    }
+}
+
+@media all and (max-width: 565px) {    
+    .admin_mngAdmin_roleFilter {   
+        width: 100%;
+    }    
+    .admin_mngAdmin_addAdmin {   
+        width: 100%;
+        margin-left: 0px;
+    }
+    .admin_mngAdmin_nameFilter_span1 {
+        width: 80px;
+    }
+    .admin_mngAdmin_nameFilter_input {
+        width: calc(100% - 140px);
+    }
+}
+
+/******************************
+********* MANAGE STAFF ********
+******************************/
+.admin_mngStaff_filter {
+    margin-left: 15px;
+}
+
+@media all and (max-width: 1150px) { 
+    .admin_mngStaff_filter {   
+        width: 50%;
+    }    
+}
+
+@media all and (max-width: 565px) {    
+    .admin_mngStaff_filter {
+        margin-left: 0px;
+        width: 100%;
+    }
+}
+
+/*************************
+******* PAGINATION *******
+**************************/
+.page_container {
+    width: fit-content;
+    height: 28px;
+    padding: 0px;
+}
+.page_arrow {
+    width: 80px;
+    height: 28px;
+    background-color: white;
+    color: #009CDE;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+    float: left;
+    font-size: 13px;
+    border-width: 0px;
+    stroke: #009CDE;
+}
+.page_next {
+    margin-left: 8px;
+}
+.page_disable {
+    cursor: not-allowed !important;
+    background-color: rgba(0,0,0,0);
+    color: rgba(51,51,51,0.5);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0);
+    stroke: rgba(51,51,51,0.3);
+}
+.page_num {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    color: #009CDE;
+    font-size: 13px;
+    border-width: 0px;
+    background-color: rgba(0,0,0,0);
+    margin-left: 8px;
+    float: left;
+}
+.page_selected {
+    background-color: #009CDE;
+    color: white;
+}
+.page_collapse {
+    display: inline;
+}
+
+@media all and (max-width: 565px) {
+    .page_arrow {
+        width: 28px;
+        border-radius: 50%;
+    }
+    .page_num {
+        margin-left: 3px;
+    }
+    .page_collapse {
+        display: none;
+    }
+}
+
+/*************************
+****** MANAGE STAFF ******
+**************************/
+.admin_table {
+    border-collapse: collapse;
+}
+.admin_mngStaff_row:first-child, .admin_mngStaff_td:first-child { border-top-left-radius: 60px; }
+.admin_mngStaff_row:first-child, .admin_mngStaff_td:last-child { border-top-right-radius: 60px; }
+.admin_mngStaff_row:last-child ,.admin_mngStaff_td:first-child { border-bottom-left-radius: 60px; }
+.admin_mngStaff_row:last-child, .admin_mngStaff_td:last-child { border-bottom-right-radius: 60px; }
+
+.admin_mngStaff_row {
+    width: 100%;
+    height: 48px;    
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: #FFFFFF;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 80px;
+}
+.admin_mngStaff_td {
+    border-width: 0px;
+    font-family: 'Muli';
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}

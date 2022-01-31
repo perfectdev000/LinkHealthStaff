@@ -1,0 +1,161 @@
+.ssu1_body {
+    width: 80%;
+    max-width: 900px;
+    height: auto;
+    margin: 58px auto 0px;
+}
+
+.ssu1_input {
+    width: 80%;
+    max-width: 900px;
+    min-width: 250px;
+    height: auto;    
+    margin: 48px auto 0px;
+}
+
+.MuiFormControl-root {
+    max-width: 900px!important;
+}
+
+.MuiSvgIcon-root {
+    width: 24px!important;
+    height: 24px!important;
+}
+
+.ssu1_locs {
+    width: fit-content;
+    max-width: 600px;
+    height: fit-content;
+    margin: 36px auto 0px;
+    position: relative;
+}
+
+.ssu1_locItem {    
+    width: 180px;
+    min-height: 48px;
+    height: auto;
+    border-radius: 36px;
+    margin-left: 18px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 16px;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;    
+    border: 1px solid #009CDE;
+    background: #009CDE;
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.ssu1_txt2 {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.ssu1_txt3 {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 17px;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.ssu1_input1 {
+    width: 80%;
+    max-width: 900px;
+    height: auto;    
+    margin: 35px auto 0px;
+}
+
+.ssu1_txt4 {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 54px;
+}
+
+.ssu1_nearLocs {
+    width: fit-content;
+    max-width: 600px;
+    height: fit-content;
+    margin: 54px auto 0px;
+    position: relative;
+}
+
+.ssu1_nearLocItem {
+    background-color: white;
+    color: #009CDE;
+}
+
+@media all and (max-width: 1339px) {
+    .ssu1_locs, .ssu1_nearLocs, .ssu2_exp {
+        max-width: 610px;
+    }
+}
+
+@media all and (max-width: 930px) {
+    .ssu1_locs {
+        width: 38%;
+        min-width: 250px;
+        margin-top: 24px;
+    }
+    
+    .ssu1_locItem {
+        margin-left: 0px;
+        min-width: 250px;
+        margin-bottom: 12px;
+        padding: 0px 10px;
+    }
+    .ssu1_nearLocs {
+        width: 38%;
+        min-width: 250px;
+        margin-top: 24px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .ssu1_input {
+        margin-top: 24px;
+    }
+    
+    
+    
+    .ssu1_txt2 {
+        font-size: 18px;
+        line-height: 22px;
+        margin-top: 42px;
+    }
+    
+    .ssu1_txt3 {
+        font-family: 'Muli';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        margin-top: 12px;
+    }
+    
+    .ssu1_input1 {
+        min-width: 250px;
+    }
+    
+    .ssu1_txt4 {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    
+    
+}

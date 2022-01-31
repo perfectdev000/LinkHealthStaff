@@ -1,0 +1,201 @@
+const Hospital = require("./hospital.model");
+const bcrypt = require("bcrypt");
+
+exports.emailCheck = async (req, res, next) => {
+    try {
+      const result = await Hospital.find({email: req.body.email});
+      if(!result.length){
+        return res.status(200).send({
+          data: [],
+          result: "OK",
+          token: [],
+        });
+      } else {
+        return res.status(200).send({
+          data: result.length,
+          result: "REPEAT",
+          token: [],
+        });
+      }
+    } catch (err) {
+      next(err);
+    }
+  }
+  
+  exports.doSignup = async (req, res, next) => {
+    try {
+      const hospital = new Hospital(req.body);
+      const result = await hospital.save();
+      const token = await hospital.generateAuthToken();
+  
+      if (!result) {
+        return res.status(500).send({
+          data: [],
+          Message: "Cannot Save User",
+          token: [],
+        });
+      }
+      result['tokens'] = null;
+      result['password'] = null;
+      return res.status(200).send({
+        data: result,
+        Message: "User Created Successfully",
+        token: token,
+      });
+    } catch (err) {
+      next(err);
+    }
+  };
+
+  exports.doLogin = async (req, res, next) => {
+    try {
+      const hospital = await Hospital.findByCredentials(
+        req.body.email,
+        req.body.password
+      ); 
+      
+      console.log(hospital);
+      
+      if(hospital !== 'Password Error'){
+        let token = await hospital.generateAuthToken();
+        if (!hospital && !token) {
+          return res.status(500).send({
+            data: [],
+            Message: "Something went Wrong..",
+            token: [],
+          });
+        }
+        hospital['tokens'] = null;
+        hospital['password'] = null;
+        return res.status(200).send({
+          data: hospital,
+          Message: "Logged in Successfully",
+          token: token,
+        });
+      } else {
+        return res.status(200).send({
+          data: [],
+          Message: "Password Error",
+          token: []
+        });
+      }
+    } catch (err) {
+      next(err);
+    }
+  };
+
+  exports.doGetUserById = async (req, res, next) => {
+    try {
+      const { _id } = req.params;
+      const user = await Hospital.findById({ _id }).lean();
+      if (!user) {
+        return res.status(500).send({
+          data: [],
+          Message: "Something went Wrong..",
+          token: ''
+        });
+      }
+      return res.status(200).send({
+        data: user,
+        Message: "User Fetched Successfully",
+        token: req.token
+      });
+    } catch (err) {
+      next(err);
+    }
+  };
+
+  exports.doUpdateUserById = async (req, res, next) => {
+    try {
+      const { _id } = req.params;
+      const query = { _id };
+      const update = { ...req.body };
+      if(update.password){
+          update.password = await bcrypt.hash(
+            update.password,
+            parseInt(process.env.ROUNDS)
+          );
+      }
+      const result = await Hospital.findByIdAndUpdate(query, update, {
+        new: true,
+      });
+  
+      if (!result) {
+        return res.status(500).send({
+          data: [],
+          Message: "Cannot Update user..",
+          token: []
+        });
+      }
+      // const token = await result.generateAuthToken();
+      result['tokens'] = null;
+      result['password'] = null;
+      return res.status(200).send({
+        data: result,
+        Message: "User Updated Successfully",
+        token: req.token
+      });
+    } catch (err) {
+      next(err);
+    }
+  };
+
+  exports.getByQuery = async (req, res, next) => {
+    try { 
+      const name = req.body.name;
+      const email = req.body.email;
+      const sortByName = req.body.sortByName;
+      const curPage = req.body.curPage;
+      var skip = 5 * (curPage - 1);
+      var query = Hospital.find();
+      query.where({ "email": { '$regex' : email, '$options' : 'i' } });
+      query.where({ "name": { '$regex' : name, '$options' : 'i' } });
+      query.collation({'locale':'en'});
+      query.sort({name: sortByName});
+      query.skip(skip).limit(5);
+      var result = await query.exec();
+      var total = await Hospital.count();
+      var data = {
+        total: total,
+        hospitals: result
+      }
+      return res.status(200).send({
+        data: data,
+        Message: "Successfully Get Hospitals",
+        token: req.token
+      }); 
+    } catch (err) {
+      next(err);
+    }
+  }
+
+  
+  exports.countByQuery = async (req, res, next) => {
+    try { 
+      var date = new Date(req.body.date);
+      var d = date.getDate();
+      var m= date.getMonth() + 1;
+      var y = date.getFullYear();
+      var gte = y + '-' + m + '-' + d;
+      var lt = y + '-' + m + '-' + (d+1);
+      console.log(gte);
+      var result = await Hospital.count({
+        createdAt: {
+          $gte: new Date(gte), 
+          $lt: new Date(lt)
+        }
+      });
+      var total = await Hospital.count();
+      var data = {
+        total: total,
+        new: result
+      }
+      return res.status(200).send({
+        data: data,
+        Message: "Successfully Count Hospitals",
+        token: req.token
+      }); 
+    } catch (err) {
+      next(err);
+    }
+  }

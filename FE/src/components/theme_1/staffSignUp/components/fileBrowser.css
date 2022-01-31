@@ -1,0 +1,50 @@
+/************* DRAG & DROP AREA **************/
+.drag-area{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border: 2px dashed #009CDE;
+    margin-top: 24px;
+    padding-bottom: 12px;
+  }
+  .drag-area.active{
+    border: 2px solid #009CDE;
+  }
+  .drag-area .icon{
+    font-size: 60px;
+    color: #009CDE;
+  }
+  .drag-area header{    
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #333333;
+    margin-top: 30px;
+  }
+  .drag-area p{ 
+    width: 100%;   
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #333333;
+    margin-top: 12px;
+  }
+  .drag-area button{
+    width: 45%;
+    min-width: 230px;
+    height: 48px;
+    margin: 12px auto 0px;    
+    background: #FFFFFF;
+    border: 1px solid #009CDE;
+    border-radius: 60px;
+    color: #009CDE;
+    font-size: 14px;
+    line-height: 16px;
+    cursor: pointer;
+  }
+  .drag-area img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+  }

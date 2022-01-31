@@ -1,0 +1,59 @@
+.ssu_subHeader_container {
+    width: 90%;
+    max-width: 1580px;
+    margin: 24px auto 0px;
+    height: auto;
+    padding-top: 1px;
+    position: relative;
+}
+
+.ssu_subHeader_back {
+    width: 18px;
+    height: 15px;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+}
+
+.ssu_subHeader_next {
+    width: 18px;
+    height: 15px;
+    position: absolute;
+    top: 5px;
+    right: 0px;
+}
+
+.ssu_subHeader_center {
+    width: 100%;
+    height: auto;
+    margin: 0px auto 0px;
+    text-align: center;
+}
+
+.ssu_subHeader_title {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: normal;
+}
+
+.ssu_subHeader_img { 
+    width: 150px;
+    margin: 24px auto 0px;
+}
+
+@media all and (max-width: 550px) {
+    .ssu_subHeader_container {
+        margin: 6px auto 0px;
+    }
+
+    .ssu_subHeader_center {
+        margin-top: 36px;
+    }
+
+    .ssu_subHeader_img {
+        margin-top: 12px;
+    }
+}

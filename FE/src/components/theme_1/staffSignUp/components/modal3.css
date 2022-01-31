@@ -1,0 +1,40 @@
+.ssu2_modal3_text2 {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;    
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.ssu2_modal3_selectBox { /** changed **/
+    width: 100%;
+    height: 48px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 60px;  
+    border: 1px solid rgba(0, 0, 0, 0.2)!important;
+    position: relative;
+}
+
+.ssu2_modal3_select {/* changed */
+    width: calc(100% - 80px)!important;
+    height: 48px;
+    font-size: 16px;
+    line-height: 18px;
+    position: absolute;
+    left: 54px;
+    border-width: 0px!important;
+    background: rgba(0,0,0,0);
+}
+
+.ssu2_modal3_date {
+    width: calc(100% - 125px);
+    height: 47px;
+    font-size: 16px;
+    line-height: 18px;
+    position: absolute;
+    left: 54px;
+    top: -16px;
+    border-width: 0px;
+    background-color: rgba(0,0,0,0);
+}
